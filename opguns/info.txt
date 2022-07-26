@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"		"Opguns"
+	"version"		"1.0"
+	"up_date"		"25 july 2022"
+	"author_name"	"Theboigamer11"
+	"author_email"	""
+	"author_url"		""
+	"info"		"KILL EVERYTHING"
+}
