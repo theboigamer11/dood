@@ -15,14 +15,23 @@ function ENT:Initialize()
 		phys:Wake()
 	end
 	self.PC = false
+	self.usecool = false
 end
 
-function ENG:StartTouch(ent)
+function ENT:StartTouch(ent)
 	if ent:GetClass() == "pc" then
 		self.PC = true
 	end
 end
 
 function ENT:Use(caller,user)
+	if self.usecool == false then
+		if self.PC == true then
+			user:ConCommand("startpcDONOTUSE")
+		end
+	end
 	
+	self.usecool = true
+	
+	timer.Simple( 1, function() self.usecool = false end )
 end
