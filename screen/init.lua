@@ -14,4 +14,15 @@ function ENT:Initialize()
 	if(phys:IsValid()) then
 		phys:Wake()
 	end
+	self.PC = false
+end
+
+function ENG:StartTouch(ent)
+	if ent:GetClass() == "pc" then
+		self.PC = true
+	end
+end
+
+function ENT:Use(caller,user)
+	
 end
