@@ -1,0 +1,7 @@
+"mmod"
+{
+	"base"		"base"
+	"title"		"mmod"
+	"maps"		""
+	"menusystem"	"1"
+}
